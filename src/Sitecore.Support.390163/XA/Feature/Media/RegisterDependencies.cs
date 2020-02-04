@@ -15,9 +15,7 @@ namespace Sitecore.Support.XA.Feature.Media
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IPlaylistRepository, PlaylistRepository>();
             serviceCollection.AddTransient<IGalleryRepository, GalleryRepository>();
-            serviceCollection.AddTransient<PlaylistController>();
             serviceCollection.AddTransient<GalleryController>();
         }
 }
